@@ -1,0 +1,168 @@
+/* BASIC */
+html,
+body {
+  height: 100%;
+  background-color: #e7e7e7;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+body{
+  overflow-y:scroll;
+}
+
+/* Wrapper for page content to push down footer */
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -80px;
+  padding: 0 0 80px;
+}
+
+.container{max-width: 960px;}
+
+.center{
+	margin:0 auto;
+	text-align: center;
+}
+.bottom-buffer{margin-bottom: 5%;}
+
+.display-768{display: block;}
+.hide-768{display: none;}
+
+select{
+  border-radius: 4px;
+  padding-left: 12px;
+  color: #555;
+}
+
+
+
+
+/* FRONTPAGE */
+.jumbotron{margin-top: -20px;}
+.jumbotron-bg{
+  background: url('http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/HD-landscape-Photographs.png');
+}
+
+
+
+
+/* WEBSHOP */
+.webshop_products_background{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.webshop-h1{
+  margin-top: 0;
+}
+
+.webshop_product{
+  padding-bottom: 2%;
+}
+
+.img-responsive{
+  width: 100%;
+}
+.styled-select {
+   width: 100%;
+   height: 34px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   margin-top: 11.5px;
+   }
+
+.active-view{
+  opacity: 0.7;
+}
+
+/* ITEM */
+
+.item_choice{
+  margin-top: 0;
+}
+.item-img{
+  text-align: center;
+}
+
+.item-img img{
+  width: 70%;
+}
+
+
+
+/* _____ animation ________ */
+.my-repeat-animation.ng-enter, 
+.my-repeat-animation.ng-leave, 
+.my-repeat-animation.ng-move {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  position:relative;
+}
+.my-repeat-animation.ng-enter {
+  left:-10px;
+  opacity:0;
+}
+.my-repeat-animation.ng-enter.ng-enter-active {
+  left:0;
+  opacity:1;
+}
+.my-repeat-animation.ng-leave {
+  left:0;
+  opacity:1;
+}
+.my-repeat-animation.ng-leave.ng-leave-active {
+  left:-10px;
+  opacity:0;
+}
+.my-repeat-animation.ng-move {
+  opacity:0.5;
+}
+.my-repeat-animation.ng-move.ng-move-active {
+  opacity:1;
+}
+
+
+/* FOOTER */
+.footer{
+	background-color: #fff;
+	height: 60px;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*________________ MOBILE FIRST _________________*/
+
+/* større end 320px ---------------------------------------------- */
+@media only screen and (min-width: 320px) {
+
+}
+
+/* større end 480px ---------------------------------------------- */
+@media only screen and (min-width: 480px) {
+    
+
+}
+/* større end 1024px ---------------------------------------------- */
+@media only screen and (min-width: 768px) {
+
+.item-img img{width: 80%;}
+.item-img{text-align: left;}
+
+} 
+
+/* større end 768px ---------------------------------------------- */
+@media only screen and (min-width: 1024px) {
+  .display-768{display: none;}
+  .hide-768{display: block;}
+
+  .item_choice{margin-top: 20%;}
+
+}
+
