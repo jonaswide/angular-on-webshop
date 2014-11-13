@@ -9,7 +9,7 @@
 //$con = mysqli_connect("localhost","root","","stickers");
 
 //cpanel
-$con = mysqli_connect("db23.meebox.net","jonaswid","SWATfire43!","jonaswid_passion");
+$con = mysqli_connect("xxx","xxx","xxx","xxx");
 
 // Check connection
 if (mysqli_connect_errno()) {
